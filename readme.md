@@ -9,3 +9,8 @@ Documentation
         
 What is this? 
     -This is my way of honkin' around with Python GUI practice
+
+How to run?
+    -Python is working and installed
+    -PyQt5 tools are installed
+    -run "py filename.py" 
