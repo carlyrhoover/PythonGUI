@@ -14,6 +14,7 @@ class MyWindow(QMainWindow):
         self.label.setText("The button has been pressed.")
         self.update()
         
+    ##update the text based on the button being pressed
     def update(self):
         self.label.adjustSize()
         
@@ -42,5 +43,5 @@ def window():
 
 window()
         
-# https://www.techwithtim.net/tutorials/pyqt5-tutorial/basic-gui-application
+
     
