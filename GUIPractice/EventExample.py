@@ -1,5 +1,6 @@
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QMainWindow
+from PyQt5.QtCore import Qt
 
 import sys
 
@@ -13,12 +14,19 @@ class MyWindow(QMainWindow):
         self.setCentralWidget(self.label)
         
     ##when mouse is moved and being pressed 
+    ### e == which button recieving event 
     def mouseMoveEvent(self, e):
         self.label.setText("mouseMoveEvent")
         
     ##when mouse is pressed 
     def mousePressEvent(self, e):
-        self.label.setText("mousePressEvent")
+        if e.button() == Qt.LeftButton: 
+            self.label.setText("What if this left button was Leon Kennedy")
+        if e.button() == Qt.RightButton:
+            self.label.setText("What if this right button was Leon Kennedy")
+        if e.button() == Qt.MiddleButton: 
+            self.label.setText("I would press it")
+            
         
     ##mouse is released
     def mouseReleaseEvent(self, e):
