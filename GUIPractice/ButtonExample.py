@@ -4,6 +4,10 @@ from random import choice
 
 import sys
 
+""" Label and button example that will update the text 
+on each based on the clicking of the button 
+ """
+ 
 ##button titles outside class 
 buttonTitles = [  
         "Ouch!",
